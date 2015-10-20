@@ -11,9 +11,9 @@ url: http://127.0.0.1:4000
 
 # Harmony theme configuration. Please change accordingly.
 harmony:
-  name: Eek's Blog
+  name: Tech and all things bleeding edge
   # Little description about your site
-  description: A blog about programming, tech and entrepreneurship.
+  # description: A blog about programming, tech and entrepreneurship.
   # 'meta_description:' Write an awesome description for your new site here.
   # It will appear in your document head meta (for Google search results) and 
   # in your feed.xml site description.
@@ -29,15 +29,15 @@ harmony:
   google_analytics_key: UA-16595407-1
 
   # Profile links, leave blank to ignore
-  social: 
+  social:
+    linkedin: raduamarie
     github: eek
     twitter: raduamarie
     facebook: raduamarie
     gplus: 106516470902631975813
-    dribble: 
-    pinterest: 
+
   # Toggle disclaimer in footer
-  show_disclaimer: true
+  show_disclaimer: false
 
 # Conversion / Build settings 
 markdown:    kramdown
