@@ -4,6 +4,10 @@ title: About me
 permalink: /about/
 ---
 
+Hi everyone, my name is Radu-Sebastian Amarie, and as my Twitter Descriptions says: I'm a Tech Enthusiast with a hobby
+for anything RC, AI, Robotics, and things that usually seem impossible.
+
+Started out by programming in in
 Hi, I am Gayan Virajith, a developer (who works on the web) based on Sri Lanka. 
 Graduated from the University College Dublin (National University of Ireland). 
 
