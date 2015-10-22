@@ -6,6 +6,9 @@
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.harmony.name }}{% endif %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.harmony.meta_description }}{% endif %}">
+        {% if page.ogimage %}
+        <meta property="og:image" content="{{page.ogimage}}" />
+        {% endif %}
         <link rel="canonical" 
         href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         
@@ -21,12 +24,27 @@
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->        
+        <![endif]-->
+
+        <!-- Shareaholic -->
+        <script type='text/javascript' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='3318e1949248ed96904926571f3f09d0' data-cfasync='false' async='async'></script>
+
     </head>
     <body class="{{ site.harmony.basetheme }}">
         <header class="main-header">
             <div class="wc-container">
-                <h1><a href="{{ site.baseurl }}/">{{ site.harmony.name }}</a></h1>
+                <h1>
+                    <span class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="166 60 668 566">
+                            <path fill="none" d="M650.551 290.88c-4.471-1.298-9.164-2.151-13.822-2.489-50.809-3.707-101.6-8.178-152.471-10.622-58.889-2.844-117.867-4.364-176.827-5.102-7.458-.098-18.693 6.338-21.52 12.711-3.013 6.764-1.209 21.058 3.938 25.058 15.36 11.956 32.596 27.04 50.516 29.218 77.191 9.369 154.889 14.56 232.409 21.271.08-1.262 47.271-2.738 70.684-4.089 20.942-1.218 35.689-17.956 36.436-38.889.702-19.983-15.13-22.934-29.343-27.067zm-312.8-106.409c-.133-30.969-27.796-56.48-61.422-56.631-34.231-.16-63.147 26.809-62.24 58.044.907 31.191 28.418 55.431 62.64 55.182 34.018-.248 61.147-25.404 61.022-56.595zm-57.475 30.418c-15.644.018-29.796-13.822-30.124-29.458-.356-16.72 13.893-30.498 31.049-30.027 16.462.453 28.933 13.493 28.684 29.982-.258 16.258-13.529 29.485-29.609 29.503zm449.306-71.156c-36.24-.222-65.458 25.6-66.453 58.756-1.04 34.667 27.111 62.089 64.32 62.658 37.378.569 67.084-25.529 67.787-59.538.711-33.813-28.827-61.653-65.654-61.876zm3.378 92.871c-17.636-.311-32.036-15.049-31.68-32.418.347-17.067 15.84-32.036 32.809-31.716 17.52.347 31.484 15.031 31.218 32.836-.276 17.938-14.4 31.618-32.347 31.298z"></path>
+                            <path fill="#DA4939" d="M813.138 139.929c-8.827-37.893-20.142-47.12-59.582-50.382-99.583-8.258-199.236-15.449-298.863-23.067-.08 2.089-141.058 5.218-211.431 6.702-34.72.738-41.36 7.324-49.662 41.102-16.56 67.369-18.436 135.44-4.569 203.502 8.684 42.622 19.111 51.787 62.72 57.28 150.098 18.916 300.853 23.964 451.964 19.716 18.036-.507 35.973-4.071 54.018-5.307 22.32-1.529 34.942-14 42.409-33.964 26.436-70.569 30-142.684 12.996-215.582zM210.08 183.893c-.898-31.236 28.018-58.204 62.24-58.044 33.618.16 61.289 25.662 61.422 56.631.133 31.191-26.996 56.347-61.022 56.596-34.222.24-61.733-24-62.64-55.183zm429.369 170.943c-23.413 1.36-70.604 2.836-70.684 4.089-77.52-6.711-155.209-11.893-232.409-21.271-17.92-2.178-35.156-17.262-50.516-29.218-5.147-4.009-6.951-18.302-3.938-25.058 2.827-6.373 14.071-12.809 21.52-12.711 58.96.738 117.938 2.249 176.827 5.102 50.88 2.444 101.671 6.916 152.471 10.622 4.649.338 9.351 1.191 13.822 2.489 14.222 4.133 30.053 7.076 29.333 27.067-.746 20.942-15.484 37.671-36.426 38.889zm84.009-91.689c-37.218-.569-65.369-27.991-64.32-62.658.987-33.147 30.204-58.978 66.453-58.756 36.827.222 66.365 28.062 65.662 61.876-.711 34.009-30.417 60.107-67.795 59.538z"></path>
+                            <path fill="#40BAEA" d="M522.775 552.225c-2.711.01-7.278 3.784-7.793 6.52-2.436 12.924-3.769 26.059-5.491 39.118.24.03.474.06.709.085-.349 4.133-.864 8.257-1.028 12.395-.394 9.829 6.2 10.443 13.618 10.453 7.448.015 14.407-.754 13.573-10.468-1.483-17.248-3.32-34.48-5.821-51.603-.393-2.656-5.081-6.505-7.767-6.5zm-100.66 6.575c-.519-2.746-5.022-6.575-7.683-6.57-2.751.01-7.538 3.804-7.902 6.425-2.421 17.507-4.128 35.129-5.446 52.761-.2 2.661 2.521 7.698 4.413 7.967 6.125.874 13.169 1.568 18.486-.779 2.716-1.198 2.706-9.006 3.509-13.888.349-2.157-.359-4.478-.589-6.734.24-.03.479-.06.724-.095-1.738-13.053-3.081-26.173-5.512-39.087z"></path>
+                            <path fill="#DA4939" d="M734.089 172.462c-16.969-.329-32.462 14.649-32.809 31.716-.356 17.369 14.044 32.107 31.68 32.418 17.947.32 32.071-13.351 32.347-31.298.266-17.805-13.698-32.489-31.218-32.836zm-452.898-17.058c-17.156-.471-31.404 13.307-31.049 30.027.338 15.636 14.48 29.476 30.124 29.458 16.089-.018 29.36-13.244 29.6-29.511.258-16.489-12.213-29.52-28.675-29.974z"></path>
+                            <path fill="#40BAEA" d="M561.699 438.7c-1.772-11.042-7.623-16.753-18.546-17.233-41.339-1.802-82.684-3.499-124.028-5.207-9.799-.404-15.036 4.498-17.472 13.933-7.947 30.811-12.32 61.977-11.846 93.866.155 10.488 4.004 16.109 14.782 17.108 30.726 2.855 92.234 7.074 92.289 6.065 15.446 0 30.891.195 46.327-.065 11.327-.185 17.447-5.951 19.764-17.472 6.133-30.51 3.592-60.698-1.27-90.995z"></path>
+                        </svg>
+                    </span>
+                    <a href="{{ site.baseurl }}/">{{ site.harmony.name }}</a>
+                </h1>
                 <h2>{{ site.harmony.description }}</h2>
                 {% include header-links.html %}                
             </div>
@@ -45,25 +63,14 @@
                 {% include footer.html %}
             </p>
         </footer>
-        <script type="text/javascript">
-          /* To avoid render blocking css */
-          var cb = function() {
-            var l = document.createElement('link'); l.rel = 'stylesheet';
-            l.href = 'http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin';
-            var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-          };
-          var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-              webkitRequestAnimationFrame || msRequestAnimationFrame;
-          if (raf) raf(cb);
-          else window.addEventListener('load', cb);
-        </script>
-        <!-- jQuery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- When no internet load JQuery from local -->
-        <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/jquery.min.js"><\/script>')</script>
-        <!-- Site js -->
-        <script src="{{ site.baseurl }}/assets/js/all.js"></script>
+
         <!-- Google analytics  -->
         {% include google-analytics.html %}
+
+        <script>
+            (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+                t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+            })(window, document, '_gscq','script','//widgets.getsitecontrol.com/27490/script.js');
+        </script>
     </body>        
 </html>
