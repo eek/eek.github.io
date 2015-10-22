@@ -1,6 +1,6 @@
 
 <p>
-    <video loop autoplay>
+    <video id="ambition-mp4" loop>
         <source src="/assets/bpg/preview-ambition-no-audio.mp4" type="video/mp4">
     </video>
     <br />mp4, 25fps, 927kb
@@ -8,6 +8,20 @@
 
 <script async type="text/javascript" src="/assets/js/bpgdec8a.js"></script>
 <p>
-    <img alt="Ambition BPG" src="/assets/bpg/ambition.bpg">
+    <img id="ambition-bpg" style="width: 100%" alt="Ambition BPG" src="/assets/bpg/ambition.bpg">
     <br />bpg, 25fps, 518kb
 </p>
+<style> #ambition-bpg, #ambition-mp4 {width: 100%}</style>
+<script type="text/javascript">
+    var finishedBPG = setInterval(function(){
+        console.log('Size', document.getElementById('ambition-bpg').offsetHeight);
+        var size = document.getElementById('ambition-bpg').offsetHeight;
+
+        if(size > 100) {
+            console.log('Loading Done');
+            document.getElementById('ambition-mp4').play();
+            clearInterval(finishedBPG);
+        }
+
+    }, 50);
+</script>
