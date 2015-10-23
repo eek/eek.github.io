@@ -64,7 +64,7 @@ Or share this article if you liked it! :D
 
 More links:
 
-* [BPG's official Page](bellard.org/bpg/)
+* [BPG's official Page](http://bellard.org/bpg/)
 * [Mirror Repository on GitHub](https://github.com/mirrorer/libbpg)
 * [Visual Comparison of BPG vs JPG/WebP](http://xooyoozoo.github.io/yolo-octo-bugfixes/#pont-de-quebec-at-night&jpg=s&bpg=t)
 * [Nice article BPG vs JPG](http://petapixel.com/2014/12/13/bpg-new-image-format-wants-replace-jpeg-equal-quality-half-size/)
