@@ -29,7 +29,7 @@ So let's go:
 
 {% include bpg_example.html %}
 
-The movie is called [Ambition](fnd.ie/vid/BJ3B) and you can view it on [Findie](fnd.ie/vid/BJ3B).
+The movie is called [Ambition](https://fnd.ie/vid/BJ3B) and you can view it on [Findie](https://fnd.ie/vid/BJ3B).
 
 ###Spot the differences? :) 
 
