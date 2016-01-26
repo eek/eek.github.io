@@ -714,3 +714,52 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: $base-05;
 }
+
+
+#carbonads a:hover{
+  text-decoration: none;
+  opacity: 0.8;
+  border:0;
+}
+
+
+.carbon-text{
+  display: block;
+  margin-top: 3px;
+  padding: 5px 5px 5px 0;
+}
+
+.carbon-poweredby {
+  font-size: 10px;
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+}
+
+@include MQ(S) {
+  #carbonads{
+    width: 130px;
+    float: right;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  #home, div.post, .page-content{
+    padding-top: 0;
+  }
+}
+
+@include MQ(L){
+  #carbonads{
+    width: 130px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 320px;
+    top: 110px;
+  }
+  .post-title, .post h1{
+    width: 70%;
+  }
+}
