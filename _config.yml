@@ -44,7 +44,7 @@ markdown:    kramdown
 highlighter: pygments 
 
 # Permalinks
-permalink:        pretty
+permalink:        /:permalink
 
 exclude: 
   - CNAME

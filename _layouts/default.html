@@ -8,7 +8,7 @@
         <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.harmony.meta_description }}{% endif %}" />
         {% if page.ogimage %}
         <meta property="og:title" content="{{page.title}}" />
-        <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}/" />
+        <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
         <meta property="og:image" content="https://eek.ro{{page.ogimage}}" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="{{site.harmony.name}}" />
@@ -16,7 +16,7 @@
         <meta property="article:published" content="{{ page.date | date_to_xmlschema }}" />
         {% endif %}
         <link rel="canonical"
-        href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% if page.title %}/{% endif %}">
+        href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% if page.title %}{% endif %}">
 
         <!-- Harmony styles -->
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css">
