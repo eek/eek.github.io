@@ -19,7 +19,6 @@
 //Import Fonts
 @import "partials/icons";
 
-
 /* -------------------------------- 
 
  Primary style
@@ -365,7 +364,7 @@ div.page-content {
     li {
       color: $color-2; 
       line-height: 1.6;
-      padding: 0 0 5px 0px;
+      //padding: 0 0 5px 0px;
       margin-left: 2em;
       position:relative;
     }
@@ -586,13 +585,6 @@ div.posts {
 }
 div.post {
   padding-top: .5em;
-  padding-bottom: 1em;
-  border-bottom: 1px $base-05 solid;
-  @include MQ(M) {
-
-    padding-bottom: 2em;  
-  }
-
   &:last-child {
     border-bottom: none;
   }
@@ -610,6 +602,18 @@ p.post-meta {
   }
 }
 
+.shareaholic-canvas{
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: $base-05;
+
+  margin: 1em 0;
+
+  @include MQ(M) {
+
+    margin: 2em 0;
+  }
+}
 /* --------------------------------
 
  Related post
@@ -766,4 +770,74 @@ tbody tr:nth-child(odd) th {
   .post-title, .post h1{
     width: 70%;
   }
+}
+
+#mc_embed_signup{
+  color: #FFF;
+  padding: 30px;
+  background: #272935;
+  margin-bottom: 25px;
+
+  h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .mc-field-group{
+    width: 90%;
+    margin: 15px auto 0 auto;
+
+    .mce_inline_error{
+      border-left: 5px solid $base-08;
+    }
+
+    #mce-error-response {
+      line-height: 1.5em;
+    }
+
+    div.mce_inline_error{
+      margin-top: 25px;
+      margin-bottom: 0;
+      background-color: $base-08;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+
+  .extra{
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
+}
+
+#mce-EMAIL{
+  font-size: 22px;
+  display: table-cell;
+  width: 69%;
+  height: 50px;
+  border: 0;
+  padding: 5px 10px;
+  color: #000;
+  margin-right: 2%;
+}
+
+#mc-embedded-subscribe{
+  font-size: 22px;
+  font-weight: bold;
+  border: 0;
+  color: #FFF;
+  background: $base-08;
+  vertical-align: top;
+  position: relative;
+  width: 29%;
+  height: 50px;
+  cursor: pointer;
+}
+
+#mce-responses{
+  width: 90%;
+  margin: 25px auto 0 auto;
+  font-size: 14px;
 }

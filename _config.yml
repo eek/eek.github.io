@@ -6,6 +6,8 @@ baseurl:
 # Site live URL
 url: https://eek.ro
 
+isDevelopment: false
+
 # Harmony theme configuration. Please change accordingly.
 harmony:
   name: Tech and all things bleeding edge
