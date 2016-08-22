@@ -63,7 +63,7 @@ Yup, there are **a few**.
 2.	**People can copy your website**
   *	But if you used a free theme it doesn’t matter anyway, lol
 3.	**You don’t have an admin panel**
-  *	Not having something like the [WordPress](https://www.wordpress.org) admin might be painful for beginners and also dealing with Markdown might annoy you at first (unless you don’t already use StackOverflow, GitHub or Slack and know a bunch of Markdown already anyway)
+  *	Not having something like the [WordPress](https://www.wordpress.org) admin might be painful for beginners and also dealing with Markdown might annoy you at first (unless you don’t already use StackOverflow, GitHub or Slack and know a bunch of Markdown already)
 4.	**You don’t have a database, so you can’t really store anything**
   * But there are a ton of 3rd party tools that can help you with whatever you want, things like:
   *  [Google Analytics](https://analytics.google.com) for Analytics.
@@ -73,7 +73,7 @@ Yup, there are **a few**.
   *  [Sumome](https://sumome.com) for List Builder, Heat Maps, Sharing Widgets, Scroll Boxes, Highlighters, Contact Forms, Image Sharing, Welcome Widgets, Content Recommendations, etc…
   *  [Disqus](https://disqus.com) for commenting (or [Facebook comments](https://developers.facebook.com/docs/plugins/comments/) if you like those more)
 5.	You will need to know a bit of **Git** ([there’s a good guide by Roger Dudler here](http://rogerdudler.github.io/git-guide/) to be able to push your updates to the blog.
-  *	But don’t freak out, that’s super simple, you just need to follow the instructions to set it up and then after you finished with something just write `git push` in the terminal
+  *	But don’t freak out, that’s super simple, you just need to follow the instructions to set it up and then after you finish with something just write `git push` in the terminal
 
 If you're into techie stuff, these disadvantages might be just something fun to do! Especially since you can get everything for free! :D
 
