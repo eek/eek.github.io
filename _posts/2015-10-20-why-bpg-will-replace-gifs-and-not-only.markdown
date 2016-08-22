@@ -10,6 +10,8 @@ categories:
 - gifs
 
 ogimage: /assets/img/bpg-comparison.jpg
+imgwidth: 640
+imgheight: 273
 permalink: why-bpg-will-replace-gifs-and-not-only
 ---
 

@@ -11,7 +11,9 @@ categories:
 - jekyll
 - github
 
-ogimage: /assets/img/github-pages-cloudflare-jeyll-love.png
+ogimage: /assets/img/github-pages-cloudflare-jeyll-love.jpg
+imgwidth: 1200
+imgheight: 630
 permalink: how-to-serve-your-blog-to-a-quarter-million-readers-without-paying-a-single-penny
 ---
 
