@@ -33,7 +33,7 @@ The response is surprisingly simple:
 
 >YES.
 
-####And you only need to know 3 things:
+#### And you only need to know 3 things:
 
 1.	**GitHub Pages.**
   *  [GitHub Pages](https://pages.github.com/) is the holy grail of hosting. They give you free hosting for your vanilla website or Jekyll blog.
@@ -52,7 +52,7 @@ The response is surprisingly simple:
 
 With Jekyll you write each post as text (Markdown actually – [there’s a good cheat sheet made by Adam Pritchard on GitHub](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)) and it compiles to a full website (HTML), no need for a database so it’s like having your WordPress blog always cached.
 
-####Disadvantages?
+#### Disadvantages?
 
 I thought you guys would never ask…
 
