@@ -14,7 +14,7 @@ categories:
 ogimage: /assets/img/github-pages-cloudflare-jeyll-love.jpg
 imgwidth: 1200
 imgheight: 630
-permalink: how-to-serve-your-blog-to-a-quarter-million-readers-without-paying-a-single-penny
+permalink: how-to-serve-your-blog-to-a-quarter-million-readers-without-paying-a-single-penny/
 ---
 
 It’s been a while since my first blog post (10 months) – [Why BPG will replace GIFs and not only]({% post_url 2015-10-20-why-bpg-will-replace-gifs-and-not-only %}) - which gathered a lot of attentions (~ 250k users that shared it 41.5k shares)

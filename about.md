@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-permalink: /about
+permalink: /about/
 ---
 
 Trying to change the world since 1990
