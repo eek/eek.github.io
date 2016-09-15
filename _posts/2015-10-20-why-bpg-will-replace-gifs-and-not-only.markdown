@@ -33,11 +33,11 @@ So let's go:
 
 The movie is called [Ambition](https://fnd.ie/vid/BJ3B) and you can view it on [Findie](https://fnd.ie/vid/BJ3B).
 
-###Spot the differences? :) 
+### Spot the differences? :)
 
 * There's none (the mp4 doesn't include audio, and neither does the BPG.)
 
-###Advantages?
+### Advantages?
 
 * **Animation support.** You can have a GIF half the size of an MP4.
 * **Video inline play** (but without sound). One of the biggest problems is that on Mobile Safari no video can be played inline. GIFs solve, and when we have GIFs that are 5% the size of the original, that's epic!
@@ -47,7 +47,7 @@ The movie is called [Ambition](https://fnd.ie/vid/BJ3B) and you can view it on [
 
 GIFs today are not even GIFs anymore. With the release of Imgur's [gifv](https://imgur.com/blog/2014/10/09/introducing-gifv/) the internet went nuts for nothing more than a mp4 that has autoplay, and if mp4's are not supported, or autoplay is disabled (mobiles), they're replaced with very low quality GIFs.
 
-###Downsides?
+### Downsides?
 
 We got just a few...
 
@@ -56,7 +56,7 @@ We got just a few...
 * **No sound support** (but who cares, this is image encoding, we're not talking better video formats).
 
 
-###So what can we do?
+### So what can we do?
 
 Why not go ahead and promote it so that browsers actually support it. Or you can start using it today, it requires some CPU processing, but hey! We're saving bandwidth! :D
 
