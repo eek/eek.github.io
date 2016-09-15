@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-permalink: /contact/
+slug: contact
 ---
 
 I'm into making new professional acquaintances so reach out if you want to talk about bleeding edge technology.

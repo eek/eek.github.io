@@ -44,7 +44,7 @@ markdown:    kramdown
 highlighter: rouge
 
 # Permalinks
-permalink:        /:permalink/
+permalink:        /:slug/
 
 exclude: 
   - CNAME
