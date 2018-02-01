@@ -1,18 +1,16 @@
 ---
-layout: post
-title:  "Why BPG will replace GIFs and not only."
-date:   2015-10-20 21:41:00
-description: BPG not only is way smaller than JPEG but also delivers a better quality. And that's not all! It also supports animations! Goodbye GIFs!
-
+title: Why BPG will replace GIFs and not only.
+date: 2015-10-20 21:41:00 Z
 categories:
 - technology
 - image encoding
 - gifs
-
-ogimage: /assets/img/bpg-comparison.jpg
+layout: post
+description: BPG not only is way smaller than JPEG but also delivers a better quality.
+  And that's not all! It also supports animations! Goodbye GIFs!
+ogimage: "/assets/img/bpg-comparison.jpg"
 imgwidth: 640
 imgheight: 273
-slug: why-bpg-will-replace-gifs-and-not-only
 ---
 
 Let's start with some history.

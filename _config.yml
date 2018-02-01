@@ -1,61 +1,45 @@
-# Harmony Jekyll theme general configurations 
-
-# Base URL
-baseurl:
-
-# Site live URL
+---
+title: Eek.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+baseurl: 
 url: https://eek.ro
-
 isDevelopment: false
-
-# Harmony theme configuration. Please change accordingly.
 harmony:
   name: Tech and all things bleeding edge
-  # Little description about your site
-  # description: A blog about programming, tech and entrepreneurship.
-  # 'meta_description:' Write an awesome description for your new site here.
-  # It will appear in your document head meta (for Google search results) and 
-  # in your feed.xml site description.
-  meta_description: > # 
-   Eek's Blog is a blog about programming, tech and entrepreneurship.
-  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
-  author: # Author details
+  meta_description: 'Eek''s Blog is a blog about programming, tech and entrepreneurship.
+
+'
+  basetheme: theme-base-01
+  author:
     name: Radu-Sebastian Amarie
     email: raduamarie@gmail.com
     url: http://eek.ro
-
-  # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-16595407-1
-
-  # Profile links, leave blank to ignore
   social:
     linkedin: raduamarie
     github: eek
     twitter: raduamarie
     facebook: raduamarie
-    gplus: 106516470902631975813
-
-  # Toggle disclaimer in footer
+    gplus: '106516470902631975813'
   show_disclaimer: false
-
-# Conversion / Build settings 
-markdown:    kramdown
-# This is how you put pygments config in jekyll 2.0 instead of pygments: true
+markdown: kramdown
 highlighter: rouge
-
-# Permalinks
-permalink:        /:slug/
-
-exclude: 
-  - CNAME
-  - Gemfile
-  - Rakefile
-  - README.md
-  - .gitignore
-  - .sass-cache
-  - Gemfile.lock
-
-# Sass conversion configs
+permalink: "/:slug/"
+exclude:
+- CNAME
+- Gemfile
+- Rakefile
+- README.md
+- ".gitignore"
+- ".sass-cache"
+- Gemfile.lock
 sass:
-    sass_dir: assets/css/_sass
-    style: :compressed
+  sass_dir: assets/css/_sass
+  style: :compressed

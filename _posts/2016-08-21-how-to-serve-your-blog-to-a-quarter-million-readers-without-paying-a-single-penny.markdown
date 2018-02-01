@@ -1,20 +1,20 @@
 ---
-layout: post
-title:  "How to serve your blog to a quarter million readers without paying a single penny"
-date:   2016-08-21 13:56:00 +0300
-description: A blog that can stand to any number of visitors without paying a single penny, this is why we all love the internet today. Say hello to Github Page, Cloudflare and Jekyll
-
+title: How to serve your blog to a quarter million readers without paying a single
+  penny
+date: 2016-08-21 10:56:00 Z
 categories:
 - technology
 - hosting
 - cloudflare
 - jekyll
 - github
-
-ogimage: /assets/img/github-pages-cloudflare-jeyll-love.jpg
+layout: post
+description: A blog that can stand to any number of visitors without paying a single
+  penny, this is why we all love the internet today. Say hello to Github Page, Cloudflare
+  and Jekyll
+ogimage: "/assets/img/github-pages-cloudflare-jeyll-love.jpg"
 imgwidth: 1200
 imgheight: 630
-slug: how-to-serve-your-blog-to-a-quarter-million-readers-without-paying-a-single-penny
 ---
 
 It’s been a while since my first blog post (10 months) – [Why BPG will replace GIFs and not only]({% post_url 2015-10-20-why-bpg-will-replace-gifs-and-not-only %}) - which gathered a lot of attentions (~ 250k users that shared it 41.5k shares)
